@@ -1,0 +1,139 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #354b3a;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(26px, 4vw, 38px);
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* MENÚ */
+nav {
+    background-color: #26392c;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #d9c6a5;
+    color: #26392c;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    width: min(100% - 30px, 1100px);
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: clamp(15px, 3vw, 25px);
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #00000010;
+}
+
+h2 {
+    color: #354b3a;
+    margin-top: 0;
+}
+
+section img {
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+/* TARJETAS */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 220px), 1fr)
+    );
+    gap: 18px;
+}
+
+.tarjeta {
+    background-color: #f5f1e8;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e0d7c6;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+    color: #7a593b;
+    margin-top: 0;
+}
+
+/* BARRA LATERAL */
+aside {
+    width: min(100% - 30px, 1100px);
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #e4eadc;
+    border-left: 5px solid #71856a;
+    border-radius: 10px;
+}
+
+aside a {
+    color: #354b3a;
+    font-weight: bold;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #26392c;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px;
+}
