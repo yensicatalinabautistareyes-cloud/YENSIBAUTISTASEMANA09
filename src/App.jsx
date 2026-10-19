@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header' 
 import Nav from './components/Nav'
+import Cuerpo from './components/Cuerpo'
 import Main from './components/Main'
 import Aside from './components/Aside'
 import Footer from './components/Footer'
@@ -26,8 +27,13 @@ function App() {
     <>
       <Header />
       <Nav menu={menus} />
+      <Cuerpo titulo ={"Hola"}> 
+        <h2>Segundo título</h2>
+        <p>Este parrafo va a cambiar</p>
+      </Cuerpo>
       <Main frase={frases} />
       <Aside texto={textos} descripcion={descri} />
+      <Header />
       <Footer />
     </>
   )

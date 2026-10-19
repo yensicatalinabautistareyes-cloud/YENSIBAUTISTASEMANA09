@@ -4,8 +4,8 @@ function Aside(props) {
 
   return (
     <aside>
-        <h2>{props.texto}</h2>
-        <p>{props.descripcion}</p>
+        <h2>Información adicional</h2>
+        <p>Estoy aprendiendo HTML5, CSS3 y JavaScript.</p>
         <a href="#contacto">Conoce más sobre mí</a>
     </aside>
   )
